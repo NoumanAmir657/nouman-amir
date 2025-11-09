@@ -1,32 +1,14 @@
 ---
-# This is called the 'Front Matter' and is required for Jekyll pages
 layout: default
 ---
 
-# Hi, I'm [Your Name] 👋
-
-Welcome to my minimal portfolio website!
-
+# Hi! I'm Nouman Amir 👋
+# Welcome to my minimal corner of the web.
 ---
 
-## About Me
+## ☕ Say Hi & Connect
 
-I'm a self-taught developer focused on building clean, efficient web solutions.
-I specialize in **[Your Primary Skill, e.g., JavaScript/React]** and love keeping code minimal.
-
-## Projects
-
-### Project One: [Project Name]
-
-A brief, one-line description of what this project does and the technology used.
-[View Project](link-to-live-demo) | [Source Code](link-to-github-repo)
-
-### Project Two: [Another Project Name]
-
-A brief, one-line description of what this project does and the technology used.
-[View Project](link-to-live-demo) | [Source Code](link-to-github-repo)
-
-## Contact
-
-* **Email:** your.email@example.com
-* **LinkedIn:** [Your LinkedIn Profile URL]
+* **Email:** [noumanamir453@gmail.com]
+* **GitHub:** [NoumanAmir657]
+* **LinkedIn:** [https://pk.linkedin.com/in/nouman-amir-0000921ba]
+* **Discord:** [lake5969]
