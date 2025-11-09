@@ -1,7 +1,6 @@
 :root {
     --main-bg-color: #f7f7f7;
     --main-text-color: #333;
-    --card-bg-color: white;
     --border-color: #ccc;
     --accent-color: #0077b6;
     --accent-hover-color: #005f92;
@@ -14,16 +13,45 @@ body {
     font-family: var(--base-font-family);
     margin: 0;
     padding: 0;
+    text-align: center; /* Center everything globally */
 }
 
-body > div {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+/* --- Centering Container --- */
+.center-content {
+    max-width: 760px; /* Optimal width for reading text */
+    margin: 0 auto; /* Centers the div container */
+    padding: 60px 20px;
+    box-sizing: border-box;
+    text-align: left; /* Reset text alignment back to normal for paragraphs */
 }
 
-h1, h2, h3 {
+h1 {
+    font-size: 2.8em;
     color: var(--main-text-color);
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.4em;
+    color: var(--main-text-color);
+    opacity: 0.8;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+    text-align: center;
+}
+
+p {
+    line-height: 1.7;
+    margin-bottom: 20px;
 }
 
 a {
@@ -36,89 +64,28 @@ a:hover {
     text-decoration: underline;
 }
 
-.right-column h1 {
-    margin-top: 0;
-    font-size: 2em;
-}
-
-.main-layout {
+/* --- Contact Button Styling --- */
+.contact-links {
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding-top: 30px;
-}
-
-.left-column {
-    flex: 0 0 350px;
-    padding: 25px;
-    box-sizing: border-box;
-    background-color: var(--card-bg-color);
-    border-radius: 8px;
-    max-width: 100%;
-}
-
-.right-column {
-    flex: 1;
-    min-width: 300px;
-}
-
-.profile-box h1 {
-    font-size: 2.2em;
-    margin-bottom: 5px;
-}
-
-.profile-box h2 {
-    font-size: 1.1em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 5px;
-}
-
-.contact-grid {
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: center; /* Centers the buttons horizontally */
     gap: 15px;
-    padding: 0;
-    margin-top: 0;
+    margin-bottom: 40px;
 }
 
-.contact-grid ul {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-}
-
-.contact-grid li {
-    width: 100%;
-    list-style: none;
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
     border: 1px solid var(--border-color);
     border-radius: 5px;
-    padding: 12px 18px;
-    box-sizing: border-box;
-    font-size: 1.1em;
-    line-height: 1.2;
-    background-color: var(--main-bg-color);
-    margin-bottom: 10px;
-}
-
-.contact-grid li a {
-    color: var(--main-text-color);
     font-weight: 500;
+    color: var(--main-text-color);
+    transition: background-color 0.2s;
 }
 
-.contact-grid li a:hover {
+.contact-button:hover {
+    background-color: #eee;
     color: var(--accent-color);
+    text-decoration: none;
 }
 
-/* Mobile Breakpoint */
-@media (max-width: 768px) {
-    .left-column {
-        flex: 1 1 100%;
-    }
-
-    .right-column {
-        flex: 1 1 100%;
-        margin-top: -20px;
-    }
-}
+/* All previous column-related and theme-hiding CSS is removed. */
