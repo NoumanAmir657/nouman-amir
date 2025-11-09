@@ -8,3 +8,5 @@ github:
 
 baseurl: "/nouman-amir"
 url: "https://NoumanAmir657.github.io"
+header_pages:
+- assets/css/style.css
