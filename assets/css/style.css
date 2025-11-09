@@ -28,14 +28,24 @@ a:hover {
     text-decoration: underline;
 }
 
-/* HIDE THEME'S DEFAULT HEADER */
+/* --- FORCEFUL HEADER HIDING --- */
+
+/* Hides the main theme header bar/navigation */
 .site-header {
-    display: none;
+    display: none !important;
 }
 
-.site-description {
-    display: none;
+/* Hides the theme's default title (if rendered) */
+.site-title {
+    display: none !important;
 }
+
+/* Hides the theme's description/subtitle */
+.site-description {
+    display: none !important;
+}
+
+/* --- LAYOUT AND STYLING --- */
 
 /* CONTENT MARGIN FIX */
 .right-column h1 {
@@ -53,8 +63,8 @@ a:hover {
 }
 
 .left-column {
-    flex: 0 0 350px; /* Increased width to 350px */
-    padding: 25px; /* Increased padding */
+    flex: 0 0 350px;
+    padding: 25px;
     box-sizing: border-box;
     background-color: var(--card-bg-color);
     border-radius: 8px;
@@ -98,21 +108,21 @@ a:hover {
     list-style: none;
     border: 1px solid var(--border-color);
     border-radius: 5px;
-    padding: 12px 18px; /* Increased padding */
+    padding: 12px 18px;
     box-sizing: border-box;
-    font-size: 1.1em; /* Increased font size */
+    font-size: 1.1em;
     line-height: 1.2;
     background-color: var(--main-bg-color);
-    margin-bottom: 10px; /* Space between links */
+    margin-bottom: 10px;
 }
 
 .contact-grid li a {
-    color: var(--main-text-color); /* Make link text match body text */
+    color: var(--main-text-color);
     font-weight: 500;
 }
 
 .contact-grid li a:hover {
-    color: var(--accent-color); /* Use accent color on hover */
+    color: var(--accent-color);
 }
 
 /* Mobile Breakpoint */
