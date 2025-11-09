@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nouman Amir | Compiler Engineer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -14,22 +16,49 @@
 
   <h2>Compiler/Software Engineer</h2>
 
-  <p>Hello! I'm a Compiler/Software Engineer, working @ 10xEngineers, mostly focusing on generating fast code for Machine Learning workloads (so far).</p>
-  <p></p>
+  <p class="intro-line">Hello! I'm a Compiler/Software Engineer, working @ 10xEngineers, mostly focusing on generating fast code for Machine Learning workloads.</p>
 
-  <h3>☕ Say Hi & Connect</h3>
+  <h3>Reach me out @</h3>
 
   <div class="contact-links">
-    <a href="mailto:[noumanamir453@gmail.com]" class="contact-button">Email</a>
+    <a href="mailto:noumanamir453@gmail.com" class="contact-button">Email</a>
     <a href="https://github.com/NoumanAmir657" class="contact-button">GitHub</a>
-    <a href="[Link to your LinkedIn Profile]" class="contact-button">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/nouman-amir-0000921ba" class="contact-button">LinkedIn</a>
   </div>
 
   <p>
     Check out my latest detailed write-ups and project deep-dives on my <a href="{{ site.baseurl }}/projects.html">Projects and Blog page</a>.
   </p>
 
+    <button id="theme-toggle" style="position: fixed; bottom: 20px; right: 20px; padding: 10px 15px; background: var(--card-bg-color); color: var(--main-text-color); border: 1px solid var(--border-color); cursor: pointer; border-radius: 5px; font-family: var(--base-font-family);">
+        Toggle Theme
+    </button>
+
 </div>
+
+<script>
+    const toggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Check localStorage for preferred theme or default to system preference
+    const currentTheme = localStorage.getItem('theme') ||
+                         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+    if (currentTheme === 'dark') {
+        body.classList.add('dark-theme');
+    }
+
+    toggle.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+
+        // Save preference
+        if (body.classList.contains('dark-theme')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
 
 </body>
 </html>

@@ -1,10 +1,28 @@
 :root {
+    /* --- LIGHT THEME (DEFAULT) --- */
     --main-bg-color: #f7f7f7;
     --main-text-color: #333;
     --border-color: #ccc;
     --accent-color: #0077b6;
     --accent-hover-color: #005f92;
-    --base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --card-bg-color: white;
+    --contact-button-hover-bg: #eee;
+    --base-font-family: 'Kalam', cursive;
+
+    /* NEW: Funky Button Variables */
+    --funky-border-thickness: 3px;
+    --funky-rotation: -1deg; /* Slight tilt for a "stuck on" look */
+}
+
+/* --- DARK THEME VARIABLES --- */
+.dark-theme {
+    --main-bg-color: #1a1a1a;
+    --main-text-color: #e0e0e0;
+    --border-color: #555;
+    --accent-color: #64b5f6;
+    --accent-hover-color: #90caf9;
+    --card-bg-color: #2c2c2c;
+    --contact-button-hover-bg: #444;
 }
 
 body {
@@ -13,16 +31,16 @@ body {
     font-family: var(--base-font-family);
     margin: 0;
     padding: 0;
-    text-align: center; /* Center everything globally */
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* --- Centering Container --- */
 .center-content {
-    max-width: 760px; /* Optimal width for reading text */
-    margin: 0 auto; /* Centers the div container */
+    max-width: 760px;
+    margin: 0 auto;
     padding: 60px 20px;
     box-sizing: border-box;
-    text-align: left; /* Reset text alignment back to normal for paragraphs */
 }
 
 h1 {
@@ -49,14 +67,26 @@ h3 {
     text-align: center;
 }
 
+/* --- Intro Line Styling --- */
+.intro-line {
+    font-size: 1.15em;
+    font-weight: 500;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* --- Paragraph Readability Fix --- */
 p {
     line-height: 1.7;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 a {
     color: var(--accent-color);
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 a:hover {
@@ -64,10 +94,10 @@ a:hover {
     text-decoration: underline;
 }
 
-/* --- Contact Button Styling --- */
+/* --- Contact Button Styling (FUNKY STYLES HERE) --- */
 .contact-links {
     display: flex;
-    justify-content: center; /* Centers the buttons horizontally */
+    justify-content: center;
     gap: 15px;
     margin-bottom: 40px;
 }
@@ -75,17 +105,23 @@ a:hover {
 .contact-button {
     display: inline-block;
     padding: 10px 20px;
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    font-weight: 500;
-    color: var(--main-text-color);
-    transition: background-color 0.2s;
+
+    /* FUNKY STYLES */
+    border: var(--funky-border-thickness) solid var(--accent-color); /* Thicker border in accent color */
+    border-radius: 8px; /* Slightly more prominent radius */
+    transform: rotate(var(--funky-rotation)); /* Apply a slight tilt */
+    font-size: 1.1em;
+
+    font-weight: 700; /* Bold font for better visibility */
+    color: var(--accent-color); /* Text color matches the border */
+    background-color: var(--card-bg-color);
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
 }
 
 .contact-button:hover {
-    background-color: #eee;
-    color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: white; /* White text on hover */
     text-decoration: none;
+    border-color: var(--accent-color);
+    transform: rotate(0deg) scale(1.05); /* Straightens and slightly grows on hover */
 }
-
-/* All previous column-related and theme-hiding CSS is removed. */
