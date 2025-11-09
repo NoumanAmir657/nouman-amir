@@ -9,9 +9,9 @@
     --contact-button-hover-bg: #eee;
     --base-font-family: 'Kalam', cursive;
 
-    /* NEW: Funky Button Variables */
+    /* Funky Button Variables */
     --funky-border-thickness: 3px;
-    --funky-rotation: -1deg; /* Slight tilt for a "stuck on" look */
+    --funky-rotation: -1deg;
 }
 
 /* --- DARK THEME VARIABLES --- */
@@ -94,7 +94,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* --- Contact Button Styling (FUNKY STYLES HERE) --- */
+/* --- Contact Button Styling (FUNKY STYLES) --- */
 .contact-links {
     display: flex;
     justify-content: center;
@@ -107,21 +107,121 @@ a:hover {
     padding: 10px 20px;
 
     /* FUNKY STYLES */
-    border: var(--funky-border-thickness) solid var(--accent-color); /* Thicker border in accent color */
-    border-radius: 8px; /* Slightly more prominent radius */
-    transform: rotate(var(--funky-rotation)); /* Apply a slight tilt */
+    border: var(--funky-border-thickness) solid var(--accent-color);
+    border-radius: 8px;
+    transform: rotate(var(--funky-rotation));
     font-size: 1.1em;
 
-    font-weight: 700; /* Bold font for better visibility */
-    color: var(--accent-color); /* Text color matches the border */
+    font-weight: 700;
+    color: var(--accent-color);
     background-color: var(--card-bg-color);
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
 }
 
 .contact-button:hover {
     background-color: var(--accent-color);
-    color: white; /* White text on hover */
+    color: white;
     text-decoration: none;
     border-color: var(--accent-color);
-    transform: rotate(0deg) scale(1.05); /* Straightens and slightly grows on hover */
+    transform: rotate(0deg) scale(1.05);
+}
+
+
+/* ===================================== */
+/* === NEW BLOG & POST STYLES BELOW === */
+/* ===================================== */
+
+/* --- Blog Listing Styles --- */
+.post-listing {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.post-item {
+    padding: 20px 0;
+}
+
+.post-listing h3 {
+    text-align: left; /* Align post titles to the left */
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    color: var(--main-text-color);
+}
+
+.post-listing h3 a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.post-listing h3 a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.post-meta {
+    margin: 5px 0 10px 0;
+    color: var(--main-text-color);
+    opacity: 0.6;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.read-more-link {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.post-separator {
+    border: 0;
+    height: 1px;
+    background: var(--border-color);
+    margin: 20px 0;
+}
+
+/* --- Single Post Content Styles --- */
+.post-content {
+    margin-top: 40px;
+    line-height: 1.8;
+}
+
+.post-content h3 {
+    text-align: left;
+    color: var(--accent-color);
+    font-size: 1.4em;
+    margin-top: 40px;
+}
+
+/* Ensure code blocks look clean in the mono font */
+.post-content pre {
+    background: var(--contact-button-hover-bg);
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    overflow-x: auto;
+    font-family: monospace, Courier, "Courier New";
+    font-size: 0.9em;
+    line-height: 1.4;
+    border-radius: 5px;
+    color: var(--main-text-color);
+    text-align: left; /* Keep code left-aligned */
+}
+
+/* Styles for Tags */
+.post-tag, .post-tag-header {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+
+.post-meta-header {
+    text-align: center;
+    color: var(--main-text-color);
+    opacity: 0.8;
+    margin-bottom: 20px;
 }
