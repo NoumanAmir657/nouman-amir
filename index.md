@@ -11,12 +11,14 @@ layout: default
 
       <h2>☕ Say Hi & Connect</h2>
 
-      <div class="contact-grid">
-        * **Email:** [your.professional.email@example.com]
-        * **GitHub:** [Link to your GitHub Profile]
-        * **LinkedIn:** [Link to your LinkedIn Profile]
-        * **Discord:** [Your Discord Username/Handle]
-      </div>
+    <div class="contact-grid">
+        <ul>
+            <li><strong>Email:</strong> [your.professional.email@example.com]</li>
+            <li><strong>GitHub:</strong> <a href="[Link to your GitHub Profile]">/noumanamir657</a></li>
+            <li><strong>LinkedIn:</strong> <a href="[Link to your LinkedIn Profile]">/noumanamir</a></li>
+            <li><strong>Discord:</strong> [Your Discord Username/Handle]</li>
+        </ul>
+    </div>
 
     </div>
 
