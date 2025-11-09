@@ -28,6 +28,19 @@ a:hover {
     text-decoration: underline;
 }
 
+/* HIDE THEME'S DEFAULT HEADER */
+.site-header {
+    display: none;
+}
+
+/* CONTENT MARGIN FIX */
+.right-column h1 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+/* RESPONSIVE TWO-COLUMN LAYOUT */
+
 .main-layout {
     display: flex;
     flex-wrap: wrap;
@@ -36,8 +49,8 @@ a:hover {
 }
 
 .left-column {
-    flex: 0 0 300px;
-    padding: 20px;
+    flex: 0 0 350px; /* Increased width to 350px */
+    padding: 25px; /* Increased padding */
     box-sizing: border-box;
     background-color: var(--card-bg-color);
     border-radius: 8px;
@@ -70,25 +83,35 @@ a:hover {
     margin-top: 0;
 }
 
+.contact-grid ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
 .contact-grid li {
     width: 100%;
     list-style: none;
     border: 1px solid var(--border-color);
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 12px 18px; /* Increased padding */
     box-sizing: border-box;
-    font-size: 0.9em;
+    font-size: 1.1em; /* Increased font size */
     line-height: 1.2;
     background-color: var(--main-bg-color);
+    margin-bottom: 10px; /* Space between links */
 }
 
-.contact-grid li strong {
-    display: block;
-    font-size: 1.1em;
-    margin-bottom: 3px;
-    color: var(--accent-color);
+.contact-grid li a {
+    color: var(--main-text-color); /* Make link text match body text */
+    font-weight: 500;
 }
 
+.contact-grid li a:hover {
+    color: var(--accent-color); /* Use accent color on hover */
+}
+
+/* Mobile Breakpoint */
 @media (max-width: 768px) {
     .left-column {
         flex: 1 1 100%;
@@ -98,13 +121,4 @@ a:hover {
         flex: 1 1 100%;
         margin-top: -20px;
     }
-}
-
-.site-header {
-    display: none;
-}
-
-.right-column h1 {
-    margin-top: 0;
-    font-size: 2em;
 }

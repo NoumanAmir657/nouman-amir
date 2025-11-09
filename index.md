@@ -11,14 +11,13 @@ layout: default
 
       <h2>☕ Say Hi & Connect</h2>
 
-    <div class="contact-grid">
+      <div class="contact-grid">
         <ul>
-            <li><strong>Email:</strong> [your.professional.email@example.com]</li>
-            <li><strong>GitHub:</strong> <a href="[Link to your GitHub Profile]">/noumanamir657</a></li>
-            <li><strong>LinkedIn:</strong> <a href="[Link to your LinkedIn Profile]">/noumanamir</a></li>
-            <li><strong>Discord:</strong> [Your Discord Username/Handle]</li>
+            <li><a href="mailto:[your.professional.email@example.com]">Email</a></li>
+            <li><a href="[Link to your GitHub Profile]">GitHub</a></li>
+            <li><a href="[Link to your LinkedIn Profile]">LinkedIn</a></li>
         </ul>
-    </div>
+      </div>
 
     </div>
 
@@ -28,9 +27,9 @@ layout: default
 
     # Compiler Engineer & Optimization Specialist
 
-    <p>Hello! Welcome to my portfolio. I'm a dedicated **Compiler Engineer** with 1.5 years of experience specializing in high-performance code generation and optimization for **RISC-V Vector Architectures**.</p>
+    <p>Hello! Welcome to my portfolio. I'm a dedicated Compiler Engineer with 1.5 years of experience specializing in high-performance code generation and optimization for RISC-V Vector Architectures.</p>
 
-    <p>I focus on low-level performance and leveraging modern compiler infrastructure, including **LLVM**, **IREE**, and **MLIR**, to build fast, efficient software solutions. I'm passionate about the intersection of hardware and software and pushing the boundaries of what is possible in embedded and accelerated computing environments.</p>
+    <p>I focus on low-level performance and leveraging modern compiler infrastructure, including LLVM, IREE, and MLIR, to build fast, efficient software solutions. I'm passionate about the intersection of hardware and software and pushing the boundaries of what is possible in embedded and accelerated computing environments.</p>
 
     <p>I enjoy tackling complex technical challenges and I'm always keen to chat about new compiler projects or optimization techniques!</p>
 
