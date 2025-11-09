@@ -13,9 +13,9 @@ layout: default
 
       <div class="contact-grid">
         <ul>
-            <li><a href="mailto:[your.professional.email@example.com]">Email</a></li>
-            <li><a href="[Link to your GitHub Profile]">GitHub</a></li>
-            <li><a href="[Link to your LinkedIn Profile]">LinkedIn</a></li>
+            <li><a href="mailto:[noumanamir453@gmail.com]">Email</a></li>
+            <li><a href="https://github.com/NoumanAmir657">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/nouman-amir-0000921ba/">LinkedIn</a></li>
         </ul>
       </div>
 
